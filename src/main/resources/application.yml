@@ -1,0 +1,15 @@
+server:
+  port: 5001
+
+ribbon.enabled: false
+ribbon.eureka.enabled: false
+eureka.client.enabled: false
+
+zuul:
+  routes:
+    target:
+      path: /**
+      url: http://localhost:7000/
+      allowed-methods: GET, POST, PUT, PATCH, DELETE, OPTION
+
+strip-prefix: true
