@@ -9,6 +9,7 @@ zuul:
   routes:
     target:
       path: /**
+      #url: http://gateway.service.ppay.me/
       url: http://localhost:7000/
       allowed-methods: GET, POST, PUT, PATCH, DELETE, OPTION
 
